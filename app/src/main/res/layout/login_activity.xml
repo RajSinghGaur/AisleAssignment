@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_layout"
+    android:layout_width="220dp"
+    android:layout_height="match_parent"
+    android:layout_marginStart="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="75dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_otp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/create_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_create_24"
+            android:layout_marginLeft="7dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="7dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/instr_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:text="@string/enter_phone_number"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/area_code"
+            android:layout_width="64dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/edit_text_border"
+            android:gravity="center_horizontal"
+            android:inputType="numberSigned"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:text="@string/default_area_code"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/phone_no"
+            android:layout_width="147dp"
+            android:layout_height="36dp"
+            android:background="@drawable/edit_text_border"
+            android:gravity="center_horizontal"
+            android:inputType="phone"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:text="@string/default_phone_no"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="78dp"
+        android:layout_height="36dp"
+        android:layout_marginVertical="4dp"
+        android:background="@drawable/edit_text_border"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="@string/default_otp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_continue"
+            android:layout_width="96dp"
+            android:layout_height="40dp"
+            android:layout_margin="0dp"
+            android:backgroundTint="#F9CB10"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:text="@string/continue_text"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:elevation="0dp" />
+
+        <TextView
+            android:id="@+id/countdown"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

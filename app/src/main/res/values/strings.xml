@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Aisle Assignment</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="enter_phone_number">Enter Your Phone Number</string>
+    <string name="enter_otp">Enter The OTP</string>
+    <string name="continue_text">Continue</string>
+    <string name="default_area_code">+91</string>
+    <string name="default_otp">1234</string>
+    <string name="default_phone_no">9876543212</string>
+    <string name="discover">Discover</string>
+    <string name="notes">Notes</string>
+    <string name="matches">Matches</string>
+    <string name="profile">Profile</string>
+    <string name="personal_message">Personal messages to you</string>
+    <string name="instr_in_you">Interested in you</string>
+    <string name="tap_to_review_50_notes">Tap to review 50+ notes</string>
+    <string name="upgrade">Upgrade</string>
+</resources>
